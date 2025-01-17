@@ -11,7 +11,7 @@ function TopBar({handleClosePopUp, handleOpenPopUp, handleOpenWifiPopUp, handClo
   return (
     <div className="flex justify-between padding-4 px-2 py-2 bg-while-100">
       <button onClick={handleOpenWifiPopUp}>
-        <div className="">
+        <div className="transition transform hover:scale-105 hover:shadow-lg">
           {wifiStatus ? (
             <div className="text-green-500">Wifi Connected</div>
           ) : (
@@ -21,7 +21,9 @@ function TopBar({handleClosePopUp, handleOpenPopUp, handleOpenWifiPopUp, handClo
         </div>
       </button>
 
-      <button onClick={handleOpenPopUp}>
+      <button onClick={handleOpenPopUp}
+      className="transition transform hover:scale-105 hover:shadow-lg"
+      >
         <div className = "flex justify-between padding-4 px-2 rounded-md bg-purple-500">
           <strong>Current Pico:</strong>{'  '}
 

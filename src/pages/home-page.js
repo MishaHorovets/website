@@ -57,7 +57,7 @@ export default function PicoReader() {
     <div className="flex flex-col items-center p-6">
       <button
         onClick={handleReadPico}
-        className="bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition"
+        className="bg-blue-500 text-white p-3 rounded transition transform hover:scale-105 hover:bg-blue-600 hover:shadow-lg"
       >
         Read from Pico
       </button>
